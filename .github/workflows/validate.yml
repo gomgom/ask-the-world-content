@@ -1,0 +1,53 @@
+# 인물 자료 형식 검사
+#
+# 검증 로직을 이 저장소에 복사하지 않는다 — 두 곳에 있으면 반드시 어긋난다.
+# 대신 앱 저장소를 체크아웃해 그쪽 스크립트를 그대로 빌려 쓴다.
+#
+# 여기서는 **형식만** 본다. 답변 품질(npm run eval)은 API 키가 필요하므로
+# 운영자가 앱 저장소에서 태그를 올릴 때 돌린다.
+
+name: 자료 형식 검사
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 자료 저장소 가져오기
+        uses: actions/checkout@v4
+        with:
+          path: content
+
+      - name: 앱 저장소 가져오기 (검증 스크립트를 빌려 쓴다)
+        uses: actions/checkout@v4
+        with:
+          repository: gomgom/ask-the-world
+          path: app
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: 의존성 설치
+        working-directory: app
+        run: npm ci
+
+      - name: 형식 검사
+        working-directory: app
+        run: npx tsx scripts/build-index.ts --figures ../content/figures --check-only
+
+      - name: 검사 항목 안내
+        if: failure()
+        run: |
+          echo "형식 검사에 걸렸습니다. 흔한 원인:"
+          echo "  · figure.md 의 id 와 폴더 이름이 다름"
+          echo "  · living 이 true/false 가 아님"
+          echo "  · quotable: true 인데 source 가 비어 있음"
+          echo "  · doc_id 가 다른 문서와 겹침"
+          echo "  · docs/ 에 문서가 하나도 없음"
+          echo ""
+          echo "자세한 규칙은 CONTRIBUTING.md 를 봐 주세요."
