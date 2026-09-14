@@ -22,10 +22,17 @@ jobs:
         with:
           path: content
 
+      # 앱 저장소는 **비공개**다. 검증 스크립트를 여기에 복사하지 않는 대신
+      # 읽기 전용 토큰으로 체크아웃한다 — 두 곳에 두면 반드시 어긋나기 때문이다.
+      #
+      # 준비: 이 저장소 Settings → Secrets → Actions 에 `APP_REPO_TOKEN` 을 넣는다.
+      #   GitHub → Settings → Developer settings → Personal access tokens →
+      #   Fine-grained tokens → gomgom/ask-the-world 에 Contents: Read-only
       - name: 앱 저장소 가져오기 (검증 스크립트를 빌려 쓴다)
         uses: actions/checkout@v4
         with:
           repository: gomgom/ask-the-world
+          token: ${{ secrets.APP_REPO_TOKEN }}
           path: app
 
       - uses: actions/setup-node@v4
@@ -39,6 +46,16 @@ jobs:
       - name: 형식 검사
         working-directory: app
         run: npx tsx scripts/build-index.ts --figures ../content/figures --check-only
+
+      - name: 토큰이 없을 때 안내
+        if: failure() && env.NO_TOKEN == 'true'
+        env:
+          NO_TOKEN: ${{ secrets.APP_REPO_TOKEN == '' }}
+        run: |
+          echo "APP_REPO_TOKEN 시크릿이 없어 검증 스크립트를 가져오지 못했습니다."
+          echo "저장소 Settings → Secrets and variables → Actions 에서 추가해 주세요."
+          echo "그때까지는 아래 명령으로 로컬에서 검사할 수 있습니다:"
+          echo "  npx tsx scripts/build-index.ts --figures <이 저장소>/figures --check-only"
 
       - name: 검사 항목 안내
         if: failure()
