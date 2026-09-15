@@ -17,30 +17,74 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      # 토큰이 없으면 **여기서** 멈춘다.
-      # 없이 checkout 으로 들어가면 "Input required and not supplied: token" 이라는
-      # 원인을 알 수 없는 오류만 남는다. 실제로 그렇게 한 번 실패했다.
+      # 토큰을 **실제로 써 본다.** 있는지만 보는 것으로는 부족했다.
+      # 없이 checkout 에 들어가면 "Input required and not supplied: token",
+      # 있지만 안 보이면 "Not Found" — 둘 다 원인을 말해 주지 않는다.
+      # 실제로 그 두 가지로 한 번씩 실패했다.
       - name: 앱 저장소 읽기 토큰 확인
         env:
           APP_REPO_TOKEN: ${{ secrets.APP_REPO_TOKEN }}
+          APP_REPO: gomgom/ask-the-world
         run: |
+          fine_grained_help() {
+            echo "  넣는 곳은 Cloudflare 가 아니라 **GitHub 이 저장소**입니다:"
+            echo "    1) github.com/settings/personal-access-tokens 에서 Fine-grained token 생성"
+            echo "       · Repository access: Only select repositories → $APP_REPO"
+            echo "       · Permissions → Repository permissions → Contents = Read-only"
+            echo "    2) 이 저장소 → Settings → Secrets and variables → Actions"
+            echo "       → New repository secret → 이름 APP_REPO_TOKEN"
+          }
+
           if [ -z "$APP_REPO_TOKEN" ]; then
             echo "::error::APP_REPO_TOKEN 시크릿이 없습니다."
             echo ""
-            echo "검증 스크립트는 앱 저장소(gomgom/ask-the-world)에 있고 그 저장소는 비공개입니다."
+            echo "검증 스크립트는 앱 저장소($APP_REPO)에 있고 그 저장소는 비공개입니다."
             echo "로직을 여기에 복사하지 않는 대신 읽기 전용 토큰으로 가져옵니다."
             echo ""
-            echo "넣는 곳은 Cloudflare 가 아니라 **GitHub 이 저장소**입니다:"
-            echo "  1) github.com/settings/personal-access-tokens 에서 Fine-grained token 생성"
-            echo "     · Repository access: gomgom/ask-the-world 만"
-            echo "     · Permissions: Contents = Read-only"
-            echo "  2) 이 저장소 → Settings → Secrets and variables → Actions"
-            echo "     → New repository secret → 이름 APP_REPO_TOKEN"
+            fine_grained_help
             echo ""
             echo "그때까지는 로컬에서 이 명령으로 같은 검사를 할 수 있습니다:"
             echo "  npx tsx scripts/build-index.ts --figures <이 저장소>/figures --check-only"
             exit 1
           fi
+
+          api="https://api.github.com/repos/$APP_REPO"
+          auth="authorization: Bearer $APP_REPO_TOKEN"
+          code=$(curl -s -o /dev/null -w '%{http_code}' -H "$auth" "$api")
+
+          case "$code" in
+            200)
+              echo "토큰으로 $APP_REPO 가 보입니다. 계속합니다."
+              ;;
+            401)
+              echo "::error::APP_REPO_TOKEN 이 GitHub 에서 거부됐습니다 (401)."
+              echo "토큰이 만료됐거나, 붙여넣을 때 앞뒤가 잘렸을 수 있습니다."
+              echo "새로 발급해 같은 이름으로 덮어써 주세요."
+              echo ""
+              fine_grained_help
+              exit 1
+              ;;
+            404)
+              echo "::error::토큰은 살아 있는데 $APP_REPO 가 보이지 않습니다 (404)."
+              echo ""
+              echo "GitHub 은 '권한 없음' 을 404 로 답합니다. 비공개 저장소를"
+              echo "읽을 권한이 이 토큰에 없다는 뜻입니다. 셋 중 하나입니다:"
+              echo ""
+              echo "  · Fine-grained token 인데 Repository access 에"
+              echo "    $APP_REPO 가 안 들어갔다 (Public repositories 로 뒀거나 다른 저장소를 골랐다)"
+              echo "  · Fine-grained token 인데 Contents 권한을 안 줬다"
+              echo "    (권한을 하나도 안 주면 저장소 존재조차 안 보인다)"
+              echo "  · **Classic token** 인데 repo 스코프가 없다"
+              echo "    — classic 은 repo 스코프가 없으면 비공개 저장소를 아예 못 본다"
+              echo ""
+              fine_grained_help
+              exit 1
+              ;;
+            *)
+              echo "::error::GitHub API 가 $code 를 돌려줬습니다. 잠시 후 다시 돌려 주세요."
+              exit 1
+              ;;
+          esac
 
       - name: 자료 저장소 가져오기
         uses: actions/checkout@v5
