@@ -1,0 +1,66 @@
+# 새 태그가 붙으면 앱 저장소를 깨운다.
+#
+# 앱은 `content.json` 에 적힌 태그 하나만 바라본다. 그래서 여기에 v1.2 를
+# 올려도 그 줄을 고치기 전에는 앱이 계속 옛 자료를 받아온다.
+# Cloudflare 의 "다시 빌드" 버튼도 같은 이유로 소용이 없다 —
+# 다시 빌드해도 읽는 줄이 그대로이기 때문이다.
+#
+# 그 줄을 사람 대신 고치라고 앱 저장소에 알리는 것이 이 워크플로의 전부다.
+# **고정 자체는 없애지 않는다.** 앱은 여전히 정확한 태그 하나를 가리키고,
+# 언제 어느 자료로 갈았는지가 앱 저장소 이력에 남는다.
+#
+# 받는 쪽: gomgom/ask-the-world 의 `.github/workflows/content-bump.yml`
+
+name: 새 자료 알리기
+
+on:
+  push:
+    tags: ['v*']
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 앱 저장소에 알리기
+        env:
+          APP_REPO_TOKEN: ${{ secrets.APP_REPO_TOKEN }}
+          APP_REPO: gomgom/ask-the-world
+          TAG: ${{ github.ref_name }}
+        run: |
+          if [ -z "$APP_REPO_TOKEN" ]; then
+            echo "::error::APP_REPO_TOKEN 시크릿이 없습니다."
+            echo "이 저장소 → Settings → Secrets and variables → Actions 에 넣어 주세요."
+            exit 1
+          fi
+
+          api="https://api.github.com/repos/$APP_REPO/dispatches"
+          auth="authorization: Bearer $APP_REPO_TOKEN"
+          body="{\"event_type\":\"content-released\",\"client_payload\":{\"ref\":\"$TAG\"}}"
+
+          code=$(curl -s -o /tmp/out -w '%{http_code}' -X POST -H "$auth" -H "accept: application/vnd.github+json" -d "$body" "$api")
+
+          case "$code" in
+            204)
+              echo "앱 저장소에 '$TAG' 를 알렸습니다."
+              echo "이제 그쪽에서 content.json 을 고치고 형식을 검사한 뒤 배포합니다."
+              ;;
+            403|404)
+              echo "::error::앱 저장소를 깨우지 못했습니다 ($code)."
+              echo ""
+              echo "APP_REPO_TOKEN 이 **읽기 전용**이면 이 단계에서 막힙니다."
+              echo "알림을 보내려면 쓰기 권한이 필요합니다."
+              echo ""
+              echo "  github.com/settings/personal-access-tokens 에서 이 토큰을 열고"
+              echo "  Permissions → Repository permissions → Contents 를"
+              echo "  Read-only → **Read and write** 로 바꿔 주세요."
+              echo ""
+              echo "(자료 검사에 쓰는 것과 같은 토큰입니다. 새로 만들 필요 없습니다.)"
+              cat /tmp/out
+              exit 1
+              ;;
+            *)
+              echo "::error::GitHub API 가 $code 를 돌려줬습니다."
+              cat /tmp/out
+              exit 1
+              ;;
+          esac
