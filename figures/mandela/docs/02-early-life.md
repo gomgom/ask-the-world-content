@@ -5,7 +5,7 @@ kind: teacher_summary
 summary: 시골 마을에서 태어나 요하네스버그에서 변호사가 되고 아프리카민족회의에 들어가기까지.
 source: "교사가 직접 쓴 요약본"
 source_url: ""
-quotable: false
+quotable: true
 ---
 
 ## 이름 두 개를 가진 아이

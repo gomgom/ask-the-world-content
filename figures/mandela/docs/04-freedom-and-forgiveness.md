@@ -5,7 +5,7 @@ kind: teacher_summary
 summary: 1990년 석방부터 대통령 시절과 진실화해위원회, 그리고 스스로 물러나기까지.
 source: "교사가 직접 쓴 요약본"
 source_url: ""
-quotable: false
+quotable: true
 ---
 
 ## 1990년 2월 11일

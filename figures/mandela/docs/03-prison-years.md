@@ -5,7 +5,7 @@ kind: teacher_summary
 summary: 로벤섬을 비롯한 감옥에서 27년을 보낸 시기. 하루 일과, 공부, 가족의 죽음, 마음의 변화.
 source: "교사가 직접 쓴 요약본"
 source_url: ""
-quotable: false
+quotable: true
 ---
 
 ## 466/64
