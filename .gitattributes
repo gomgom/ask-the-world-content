@@ -1,0 +1,13 @@
+# 이미지는 바이너리다. Git 이 줄바꿈을 건드리면 파일이 깨진다.
+*.webp binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+
+# 줄바꿈을 저장소 안에서 LF 로 통일한다.
+# 없으면 Windows 에서 작업한 사람과 Mac·Linux 에서 작업한 사람의 커밋이
+# **파일 전체가 바뀐 것처럼** 보인다. 선생님들이 PR 을 보내는 저장소에서
+# 그러면 무엇이 실제로 바뀌었는지 아무도 못 읽는다.
+*.md    text eol=lf
+*.yaml  text eol=lf
+*.yml   text eol=lf
