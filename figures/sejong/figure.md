@@ -12,6 +12,10 @@ era_context: >-
 knowledge_cutoff: "1450-04-08"
 grade_level: 6
 
+portrait: portrait.webp
+portrait_credit: "AI 일러스트 (2026)"
+# 사진은 없습니다. 표준영정(1973)은 저작권이 살아 있어 쓰지 않습니다.
+
 starter_questions:
   - 왜 훈민정음을 직접 만드셨나요?
   - 어릴 때 책을 얼마나 많이 읽으셨나요?

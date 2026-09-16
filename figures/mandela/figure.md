@@ -11,6 +11,12 @@ era_context: >-
 knowledge_cutoff: "2013-12-05"
 grade_level: 6
 
+portrait: portrait.webp
+portrait_credit: "AI 일러스트 (2026)"
+photo: photo.jpg
+photo_credit: "Kingkongphoto & www.celebrity-photos.com · 1994 · CC BY-SA 2.0 (잘라서 사용)"
+photo_source_url: "https://commons.wikimedia.org/wiki/File:Nelson_Mandela_1994.jpg"
+
 # 브리핑 화면에서 학생이 눌러 바로 물어볼 수 있는 질문.
 # 전부 자료에 답이 있는 것으로 고른다 — 첫 질문부터 '자료 없음'이 뜨면
 # 학생이 프로그램이 고장 났다고 여긴다.

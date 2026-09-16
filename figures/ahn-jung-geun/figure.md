@@ -12,6 +12,12 @@ era_context: >-
 knowledge_cutoff: "1910-03-26"
 grade_level: 6
 
+portrait: portrait.webp
+portrait_credit: "AI 일러스트 (2026)"
+photo: photo.jpg
+photo_credit: "촬영자 미상 · 1910년 이전 · 퍼블릭 도메인"
+photo_source_url: "https://commons.wikimedia.org/wiki/File:An_Jung-geun.JPG"
+
 starter_questions:
   - 어릴 때는 어떤 아이였나요?
   - 학교를 세워 학생들을 가르치시다가 왜 총을 들고 의병이 되셨나요?
