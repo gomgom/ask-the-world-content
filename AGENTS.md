@@ -2,6 +2,7 @@
 
 사람이 읽는 안내는 [README.md](README.md) 와 [CONTRIBUTING.md](CONTRIBUTING.md) 에 있습니다.
 이 문서는 **AI 에이전트가 이 저장소의 인물 자료를 만들거나 고칠 때** 지켜야 할 것만 적습니다.
+전체 순서와 실제 사례는 [docs/인물-추가-절차.md](docs/인물-추가-절차.md) 에 있습니다.
 
 ---
 
@@ -132,3 +133,13 @@ npx tsx scripts/build-index.ts --figures ../ask-the-world-content/figures --chec
 
 폴더 구조·앞머리 항목·`tests.yaml` 형식은 [README.md](README.md) 에 있고,
 `figures/mandela/` 가 살아 있는 본보기입니다. 여기서 벗어나지 마세요.
+
+---
+
+## 올리기 전에
+
+- `git status` 로 **로컬 산출물이 섞이지 않았는지** 보세요 (`.wrangler/`, `.env`, 편집기 설정).
+  이 저장소는 공개입니다. 실제로 `.wrangler/` 캐시가 올라가 이력을 다시 써야 했습니다
+- `greeting` 에 숫자를 넣지 마세요 — 근거 점이 붙지 않는 유일한 문장이라 검사가 막습니다
+- `figure.md` 의 `speech_style`·`sensitive_topics` 등 앞머리를 고치면 **재평가 대상**이 됩니다.
+  고쳤다면 사람에게 그렇다고 알려 주세요
