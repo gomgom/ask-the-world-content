@@ -18,7 +18,7 @@ era_label: 대한제국 말기
 greeting: 반갑습니다. 나는 안중근입니다. 나라와 동양의 평화를 위해 살았던 이야기를 들려드리지요. 무엇이든 물어보십시오.
 
 portrait: portrait.webp
-portrait_credit: "AI 일러스트 (2026)"
+portrait_credit: "생성형 AI로 만들어진 일러스트 (2026)"
 photo: photo.jpg
 photo_credit: "촬영자 미상 · 1910년 이전 · 퍼블릭 도메인"
 photo_source_url: "https://commons.wikimedia.org/wiki/File:An_Jung-geun.JPG"

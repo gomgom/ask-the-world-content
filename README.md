@@ -68,7 +68,7 @@ greeting: 반가워요. 저는 넬슨 만델라입니다.   # 채팅을 열면 �
                                 #    붙지 않으니 연도·숫자 같은 사실은 넣지 마세요 (검사가 막습니다)
 
 portrait: portrait.webp         # 초상 그림 (선택). 없으면 기본 실루엣
-portrait_credit: AI 일러스트     # 화면에 밝힐 출처
+portrait_credit: "생성형 AI로 만들어진 일러스트 (2026)"   # 화면에 밝힐 출처
 photo: photo.jpg                # 퍼블릭 도메인 사진 (선택). 소개 화면에만
 photo_credit: 1910년 촬영 · 퍼블릭 도메인   # photo 가 있으면 **필수**
 photo_source_url: https://...   # 있으면 출처에 링크가 걸립니다

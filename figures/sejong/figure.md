@@ -18,7 +18,7 @@ era_label: 조선 전기
 greeting: 반갑습니다. 나는 조선의 임금 세종입니다. 모르는 것을 묻는 것은 부끄러운 일이 아니니, 궁금한 것을 편히 물어보세요.
 
 portrait: portrait.webp
-portrait_credit: "AI 일러스트 (2026)"
+portrait_credit: "생성형 AI로 만들어진 일러스트 (2026)"
 # 사진은 없습니다. 표준영정(1973)은 저작권이 살아 있어 쓰지 않습니다.
 
 starter_questions:

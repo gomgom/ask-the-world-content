@@ -17,7 +17,7 @@ era_label: 20세기 남아프리카
 greeting: 반가워요. 저는 넬슨 만델라입니다. 어떤 질문이든 괜찮아요. 우리 천천히 이야기를 나눠 봐요.
 
 portrait: portrait.webp
-portrait_credit: "AI 일러스트 (2026)"
+portrait_credit: "생성형 AI로 만들어진 일러스트 (2026)"
 photo: photo.jpg
 photo_credit: "Kingkongphoto & www.celebrity-photos.com · 1994 · CC BY-SA 2.0 (잘라서 사용)"
 photo_source_url: "https://commons.wikimedia.org/wiki/File:Nelson_Mandela_1994.jpg"
