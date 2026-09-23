@@ -224,3 +224,12 @@ quotes_verified: true
 > 머지만으로는 앱이 바뀌지 않습니다. **수업 중에 자료가 갑자기 바뀌지 않게** 하려는 장치입니다.
 
 자세한 규칙은 [CONTRIBUTING.md](CONTRIBUTING.md) 를 봐 주세요.
+
+---
+
+## 라이선스
+
+자료 글은 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.ko) 입니다 —
+출처만 밝히면 누구나 수업 자료로 고쳐 쓰고 나눌 수 있고, 고쳐서 나눌 때는 같은 조건으로 나눕니다.
+**사진은 각자의 원래 라이선스**(`photo_credit`)를 따르고, AI 인물 그림과 인용한 원문은 따로 정해 두었습니다.
+범위와 예외는 [LICENSE](LICENSE) 에 있습니다. PR 로 보낸 자료도 같은 라이선스로 공개됩니다.
