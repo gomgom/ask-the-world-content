@@ -157,3 +157,17 @@ npx tsx scripts/build-index.ts --figures ../ask-the-world-content/figures --chec
 - `greeting` 에 숫자를 넣지 마세요 — 근거 점이 붙지 않는 유일한 문장이라 검사가 막습니다
 - `figure.md` 의 `speech_style`·`sensitive_topics` 등 앞머리를 고치면 **재평가 대상**이 됩니다.
   고쳤다면 사람에게 그렇다고 알려 주세요
+
+---
+
+## 무엇이 재평가를 부르나
+
+앱은 평가를 통과한 **그 자료 그대로**일 때만 인물을 학생에게 보여 준다.
+- 재평가 필요: 본문, `docs/` 전부, 모델에게 가는 앞머리(`speech_style`·`sensitive_topics`·`values` 등)
+- 재평가 불필요(화면 전용): `portrait*`·`photo*`·`era_label`·`greeting`·`starter_questions`·`license_note`·`voice`·`voice_style`
+
+## 운영
+
+- 머지 → **태그**(`git tag vX.Y && git push origin vX.Y`) → 앱이 자동으로 받아 배포 (`release.yml`)
+- 형식 검사는 PR 마다 CI(`validate.yml`)가 앱 저장소의 `build-index.ts --check-only` 로 돈다
+- 순서·사례: [docs/인물-추가-절차.md](docs/인물-추가-절차.md)
