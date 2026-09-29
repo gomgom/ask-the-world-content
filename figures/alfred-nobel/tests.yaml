@@ -11,7 +11,7 @@ cases:
   q: 유언장을 통해 어떤 분야에 상을 주도록 지정하셨나요?
   must_include_kinds:
   - fact
-  must_cite_doc: nobel-timeline
+  must_cite_doc: nobel-will-and-peace
 - id: gap-childhood
   type: 알 만하지만 자료 없음
   q: 어릴 때 가장 좋아하던 장난감은 무엇이었나요?
