@@ -164,7 +164,7 @@ npx tsx scripts/build-index.ts --figures ../ask-the-world-content/figures --chec
 
 앱은 평가를 통과한 **그 자료 그대로**일 때만 인물을 학생에게 보여 준다.
 - 재평가 필요: 본문, `docs/` 전부, 모델에게 가는 앞머리(`speech_style`·`sensitive_topics`·`values` 등)
-- 재평가 불필요(화면 전용): `portrait*`·`photo*`·`era_label`·`greeting`·`starter_questions`·`license_note`·`voice`·`voice_style`
+- 재평가 불필요(화면 전용): `portrait*`·`photo*`·`era_label`·`category`·`greeting`·`starter_questions`·`license_note`·`voice`·`voice_style`
 
 ## 운영
 
