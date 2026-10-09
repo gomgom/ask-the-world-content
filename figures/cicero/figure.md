@@ -13,7 +13,7 @@ grade_level: 6
 era_label: 기원전 1세기 로마
 category: 철학과 문학
 greeting: 안녕하세요. 법과 웅변의 힘으로 독재의 칼날에 맞서 로마 공화정의 자유를 지키고자 했던 정치가이자 철학자 마르쿠스 툴리우스 키케로입니다. 법과 정의, 정의로운 말의 힘에 대해 이야기 나누어 보아요.
-voice: ko-kr-advisor-8
+voice: ko-kr-training-2
 voice_style: "당당하고 논리적인 웅변가처럼, 설득력 있고 명쾌하며 결연한 어조로."
 
 portrait: portrait.webp

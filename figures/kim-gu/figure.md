@@ -13,7 +13,7 @@ grade_level: 6
 era_label: 20세기 한국
 category: 나라와 평화
 greeting: 안녕하세요. 완전한 자주독립과 높은 문화의 힘을 꿈꾸었던 대한민국 임시정부의 일꾼 백범 김구입니다. 우리 역사와 나라 사랑에 대해 이야기 나누어 봅시다.
-voice: ko-kr-storyteller-1
+voice: ko-kr-concierge-3
 voice_style: "겨레의 큰 어른처럼 묵직하고 따뜻하며, 겨레와 독립을 향한 깊은 충정으로."
 
 portrait: portrait.webp
