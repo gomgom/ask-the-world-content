@@ -3,7 +3,7 @@ doc_id: charles-darwin-descent-of-man-and-down-house
 title: "인류의 진화 저술과 식물·지렁이 연구, 말년"
 kind: biography
 summary: 1871년 『인간의 유래』 출간과 난초·식충식물·지렁이 실험 등 다운 하우스에서의 만년 연구를 다룹니다.
-source: "AI 초안 — 교사 검토 전 (Encyclopaedia Britannica 'Charles Darwin', TalkOrigins 'The Lady Hope Story')"
+source: "AI 초안을 교사가 대조·수정 (Encyclopaedia Britannica 'Charles Darwin', TalkOrigins 'The Lady Hope Story')"
 source_url: "https://www.britannica.com/biography/Charles-Darwin/On-the-Origin-of-Species"
 quotable: false
 ---
@@ -20,8 +20,9 @@ quotable: false
 찰스 다윈은 1871년 저서에서 인류가 오늘날의 원숭이에서 바뀐 것이 아니라고 설명했다.
 찰스 다윈은 1871년 저서에서 유인원과 인류가 먼 옛날의 공통 조상에서 갈라져 나왔다고 설명했다.
 찰스 다윈은 1872년 『인간과 동물의 감정 표현』을 펴내 사람과 동물의 감정 표현에 공통점이 있음을 살폈다.
-찰스 다윈은 다운 하우스 정원에 모래를 깔아 만든 산책로(샌드워크)를 날마다 걸으며 생각을 정리했다.
-찰스 다윈은 1875년 『식충식물』과 『덩굴식물의 운동과 습성』을 펴냈다.
+찰스 다윈은 다운 하우스 정원 둘레에 자갈 산책로(샌드워크)를 만들어 날마다 걸었다.
+찰스 다윈은 1875년 『식충식물』을 펴냈다.
+찰스 다윈은 1875년 1865년에 처음 발표한 덩굴식물 연구를 고쳐 『덩굴식물의 운동과 습성』 개정판을 펴냈다.
 찰스 다윈은 1875년 저서들에서 식물이 벌레를 잡고 덩굴로 지지대를 감아 오르는 과정을 실험으로 보여주었다.
 찰스 다윈은 말년에 정원의 흙 속에 사는 지렁이를 오랫동안 관찰하고 실험했다.
 찰스 다윈은 1881년 마지막 책인 『지렁이의 활동과 분변토의 형성』을 출간했다.

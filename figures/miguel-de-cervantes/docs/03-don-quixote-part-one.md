@@ -3,7 +3,7 @@ doc_id: miguel-de-cervantes-don-quixote-part-one
 title: "1605년 『돈 키호테』 1부 출간과 두 주인공의 모험"
 kind: biography
 summary: 1605년 출간된 『돈 키호테』 1부의 줄거리와 주인공 알론소 키하노(돈 키호테), 종자 산초 판사, 풍차 돌격 장면의 의미를 다룹니다.
-source: "AI 초안 — 교사 검토 전 (Encyclopaedia Britannica 'Don Quixote', 『돈 키호테』 원문)"
+source: "AI 초안을 교사가 대조·수정 (Encyclopaedia Britannica 'Don Quixote', 『돈 키호테』 원문)"
 source_url: "https://www.britannica.com/topic/Don-Quixote-novel"
 quotable: false
 ---

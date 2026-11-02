@@ -3,7 +3,7 @@ doc_id: heo-jun-structure-and-hyangyak
 title: "『동의보감』의 체계와 향약·양생 사상"
 kind: biography
 summary: 『동의보감』 25권의 5대 구성 체계와 출처 명기, 우리 약재(향약)의 한글 표기, 병을 미리 예방하는 양생 사상을 다룹니다.
-source: "AI 초안 — 교사 검토 전 (한국민족문화대백과사전 '동의보감')"
+source: "AI 초안을 교사가 대조·수정 (한국민족문화대백과사전 '동의보감')"
 source_url: "https://encykorea.aks.ac.kr/Article/E0016731"
 quotable: false
 ---

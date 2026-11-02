@@ -3,7 +3,7 @@ doc_id: charles-darwin-beagle-voyage-and-galapagos
 title: "비글호 항해와 갈라파고스 제도의 생물 관찰"
 kind: biography
 summary: 1831년부터 1836년까지 이어진 비글호 세계 일주 항해와 남아메리카 화석 발굴, 갈라파고스 제도 생물 표본 수집 과정을 다룹니다.
-source: "AI 초안 — 교사 검토 전 (Encyclopaedia Britannica 'Charles Darwin')"
+source: "AI 초안을 교사가 대조·수정 (Encyclopaedia Britannica 'Charles Darwin')"
 source_url: "https://www.britannica.com/biography/Charles-Darwin/The-Beagle-voyage"
 quotable: false
 ---

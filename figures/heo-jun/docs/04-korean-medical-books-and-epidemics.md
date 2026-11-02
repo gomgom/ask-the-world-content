@@ -3,7 +3,7 @@ doc_id: heo-jun-korean-medical-books-and-epidemics
 title: "한글 언해 의서와 전염병 치료서 집필"
 kind: biography
 summary: 1601년 선조의 명으로 한글로 풀이한 언해 의서 3종과 1613년에 펴낸 전염병 전문 의서 『신찬벽온방』·『벽역신방』을 다룹니다.
-source: "AI 초안 — 교사 검토 전 (한국민족문화대백과사전 '허준'·'언해두창집요'·'언해태산집요'·'성홍열')"
+source: "AI 초안을 교사가 대조·수정 (한국민족문화대백과사전 '허준'·'언해두창집요'·'언해태산집요'·'성홍열')"
 source_url: "https://encykorea.aks.ac.kr/Article/E0063152"
 quotable: false
 ---

@@ -3,7 +3,7 @@ doc_id: charles-darwin-natural-selection-and-origin-of-species
 title: "자연선택 이론의 정립과 『종의 기원』 출간"
 kind: biography
 summary: 1837년 생명나무 스케치와 1838년 자연선택 착안, 따개비 연구, 월리스와의 공동 발표 및 1859년 『종의 기원』 출간을 다룹니다.
-source: "AI 초안 — 교사 검토 전 (Encyclopaedia Britannica 'Charles Darwin')"
+source: "AI 초안을 교사가 대조·수정 (Encyclopaedia Britannica 'Charles Darwin')"
 source_url: "https://www.britannica.com/biography/Charles-Darwin/Evolution-by-natural-selection-the-London-years-1836-42"
 quotable: false
 ---

@@ -3,7 +3,7 @@ doc_id: miguel-de-cervantes-algiers-captivity-and-tax-collector
 title: "알제에서의 5년 포로 생활과 세금 징수원 시절"
 kind: biography
 summary: 1575년부터 1580년까지 북아프리카 알제에서의 5년 포로 생활과 네 차례 탈출 시도, 귀국 후 세금 징수원 활동과 투옥 시련을 다룹니다.
-source: "AI 초안 — 교사 검토 전 (Encyclopaedia Britannica 'Miguel de Cervantes')"
+source: "AI 초안을 교사가 대조·수정 (Encyclopaedia Britannica 'Miguel de Cervantes')"
 source_url: "https://www.britannica.com/biography/Miguel-de-Cervantes"
 quotable: false
 ---

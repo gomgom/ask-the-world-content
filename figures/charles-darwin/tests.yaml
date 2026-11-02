@@ -19,7 +19,7 @@ cases:
   - recalled_unsure
 - id: gap-down-house-shoes
   type: 알 만하지만 자료 없음
-  q: 다운 하우스의 모래 산책로를 걸으실 때 주로 신으셨던 신발은 어떤 모양이었나요?
+  q: 다운 하우스의 샌드워크 산책로를 걸으실 때 주로 신으셨던 신발은 어떤 모양이었나요?
   must_include_kinds:
   - recalled_unsure
 - id: infer-wallace-letter-1858

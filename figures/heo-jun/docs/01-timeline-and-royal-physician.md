@@ -3,7 +3,7 @@ doc_id: heo-jun-timeline-and-royal-physician
 title: "서얼의 한계를 넘어선 어의, 허준의 생애"
 kind: timeline
 summary: 1539년 서얼 출생부터 내의원 입속, 임진왜란 호종과 호성공신 책봉, 유배와 석방, 1615년 별세까지의 생애를 다룹니다.
-source: "AI 초안 — 교사 검토 전 (한국민족문화대백과사전 '허준')"
+source: "AI 초안을 교사가 대조·수정 (한국민족문화대백과사전 '허준')"
 source_url: "https://encykorea.aks.ac.kr/Article/E0063152"
 quotable: false
 ---

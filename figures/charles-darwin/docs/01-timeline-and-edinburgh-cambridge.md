@@ -3,7 +3,7 @@ doc_id: charles-darwin-timeline-and-edinburgh-cambridge
 title: "슈루즈베리 출생과 에든버러·케임브리지 학창 시절"
 kind: timeline
 summary: 1809년 영국 슈루즈베리 출생부터 에든버러 대학교 의학 중퇴, 케임브리지 대학교 졸업과 박물학 탐구까지의 과정을 다룹니다.
-source: "AI 초안 — 교사 검토 전 (Encyclopaedia Britannica 'Charles Darwin')"
+source: "AI 초안을 교사가 대조·수정 (Encyclopaedia Britannica 'Charles Darwin')"
 source_url: "https://www.britannica.com/biography/Charles-Darwin"
 quotable: false
 ---

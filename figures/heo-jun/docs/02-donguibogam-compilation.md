@@ -3,7 +3,7 @@ doc_id: heo-jun-donguibogam-compilation
 title: "14년에 걸친 『동의보감』 편찬과 간행"
 kind: biography
 summary: 1596년 선조의 편찬 명부터 정유재란으로 인한 중단, 단독 집필과 유배지에서의 집필, 1609년 석방 뒤 1610년 완성, 1613년 내의원 목활자 간행까지를 다룹니다.
-source: "AI 초안 — 교사 검토 전 (한국민족문화대백과사전 '동의보감')"
+source: "AI 초안을 교사가 대조·수정 (한국민족문화대백과사전 '동의보감')"
 source_url: "https://encykorea.aks.ac.kr/Article/E0016731"
 quotable: false
 ---

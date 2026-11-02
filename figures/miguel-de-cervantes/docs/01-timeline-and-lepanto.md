@@ -3,7 +3,7 @@ doc_id: miguel-de-cervantes-timeline-and-lepanto
 title: "알칼라데에나레스 출생과 레판토 해전 참전"
 kind: timeline
 summary: 1547년 스페인 출생부터 이탈리아 체류, 1571년 레판토 해전 참전과 왼손 부상, 1616년 별세까지의 생애를 다룹니다.
-source: "AI 초안 — 교사 검토 전 (Encyclopaedia Britannica 'Miguel de Cervantes')"
+source: "AI 초안을 교사가 대조·수정 (Encyclopaedia Britannica 'Miguel de Cervantes')"
 source_url: "https://www.britannica.com/biography/Miguel-de-Cervantes"
 quotable: false
 ---

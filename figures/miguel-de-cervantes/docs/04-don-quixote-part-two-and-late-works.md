@@ -3,7 +3,7 @@ doc_id: miguel-de-cervantes-don-quixote-part-two-and-late-works
 title: "『모범 소설집』과 1615년 『돈 키호테』 2부, 말년"
 kind: biography
 summary: 『돈 키호테』 1부의 인기와 가난, 1613년 『모범 소설집』, 가짜 속편이 나온 뒤인 1615년 『돈 키호테』 2부 출간 및 1616년 별세를 다룹니다.
-source: "AI 초안 — 교사 검토 전 (Encyclopaedia Britannica 'Miguel de Cervantes')"
+source: "AI 초안을 교사가 대조·수정 (Encyclopaedia Britannica 'Miguel de Cervantes')"
 source_url: "https://www.britannica.com/biography/Miguel-de-Cervantes/Publication-of-Don-Quixote"
 quotable: false
 ---
