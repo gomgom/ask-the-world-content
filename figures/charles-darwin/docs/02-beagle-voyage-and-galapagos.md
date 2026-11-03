@@ -3,7 +3,7 @@ doc_id: charles-darwin-beagle-voyage-and-galapagos
 title: "비글호 항해와 갈라파고스 제도의 생물 관찰"
 kind: biography
 summary: 1831년부터 1836년까지 이어진 비글호 세계 일주 항해와 남아메리카 화석 발굴, 갈라파고스 제도 생물 표본 수집 과정을 다룹니다.
-source: "AI 초안을 교사가 대조·수정 (Encyclopaedia Britannica 'Charles Darwin')"
+source: "AI 초안을 교사가 대조·수정 (Encyclopaedia Britannica 'Charles Darwin'; 육지이구아나는 다윈 『비글호 항해기』를 인용한 위키백과 'Galápagos land iguana')"
 source_url: "https://www.britannica.com/biography/Charles-Darwin/The-Beagle-voyage"
 quotable: false
 ---
@@ -30,6 +30,7 @@ quotable: false
 찰스 다윈은 1835년 갈라파고스 제도의 부총독 니컬러스 로슨에게서 땅거북을 보면 어느 섬에서 왔는지 알 수 있다는 말을 들었다.
 찰스 다윈은 1835년 갈라파고스의 여러 섬에서 흉내지빠귀(모킹버드)와 작은 새들의 표본을 채집했다.
 찰스 다윈은 1835년 채집 당시 작은 새들이 서로 다른 종류의 새라고 여겼다.
+찰스 다윈은 1835년 갈라파고스의 제임스섬(지금의 산티아고섬)에 육지이구아나의 굴이 너무 많아 텐트 칠 자리를 한동안 찾지 못했다고 적었다.
 찰스 다윈은 1835년 일부 새 표본에 어느 섬에서 잡았는지 적지 않았다.
 찰스 다윈은 1836년 10월 2일 영국 팰머스(Falmouth)항으로 돌아왔다.
 찰스 다윈은 1837년 무렵 채집한 표본들을 여러 전문가에게 맡겨 분석을 받았다.
